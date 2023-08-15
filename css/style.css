@@ -1,0 +1,100 @@
+:root{
+    --backgroundColor: #61677A;
+    --primaryColor: #272829;
+    --secondaryColor: #465e95;
+   
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--backgroundColor);
+}
+.signup .container,
+.login .container,.home .text{
+    width: 55%;
+    margin: auto;
+}
+.home .text{
+    width: 50%;
+    margin: auto;
+}
+.box, .home .text{
+    padding: 50px ;
+    text-align: center;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    padding: 50px;
+}
+.box h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primaryColor);
+}
+.btnLogin , .btnLogout:hover{
+    border: 1px solid var(--primaryColor);
+    color: transparent;
+    color: var(--primaryColor);
+    transition: all 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+.btnLogin:hover , .btnLogout{
+    color: #fff;
+    background-color: var(--primaryColor);
+    transition: all 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+.box .form-control{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+::placeholder{
+    color: #fff !important;
+    opacity: 0.75 !important;
+
+}
+.box .link ,.box .link a{
+    color: #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.link a:hover{
+    color: var(--primaryColor);
+}
+
+.home nav {
+    box-shadow: 0px 13px 28px 15px rgb(0 0 0 / 24%);
+  }
+
+  .home .logout {
+    border-color: #272829;
+    padding: 7px 20px !important;
+  }
+  .home .logout:hover {
+    color: white;
+    background-color: #272829;
+
+  }
+
+   @media screen and (max-width: 992px){
+    .signup .container,
+    .login .container,.caption .text{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+   .caption .text{
+        width: 90%;
+    }
+}
